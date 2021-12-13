@@ -5,9 +5,9 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path:'home',component:HomeComponent},
-  {path:'about',component:AboutComponent},
-  {path:'contact',component:ContactComponent},
+  {path:'home',component:HomeComponent},// /home url
+  {path:'about',component:AboutComponent},// /about url
+  {path:'contact',component:ContactComponent},// /contact url
 ];
 
 @NgModule({
