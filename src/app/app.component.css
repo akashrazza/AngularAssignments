@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+  }
+
+  .demo-buttons{
+      margin: 10px;
+  }
+  .Input-container{
+      margin: 10px;
+  }
+  .table-header{
+      color: white;
+  }
+  .demo-button-container{
+      display: flex;
+      justify-content: flex-end;
+  }
+  .container-main{
+      padding: 50px;
+  }
+  .header{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; 
+  }
+
+  .header h1{
+    font-size: 40px;
+    font-weight: bolder;
+  }

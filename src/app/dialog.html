@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Please Provide Insurance Detail</h1>
+<div mat-dialog-content>
+
+  <mat-form-field appearance="legacy" class="Input-container">
+    <mat-label>Insurance Policy No</mat-label>
+    <input matInput [(ngModel)]="data.Insurance_Policy_No">
+  </mat-form-field>
+  <mat-form-field appearance="legacy" class="Input-container">
+    <mat-label>Policy Holders Name</mat-label>
+    <input matInput [(ngModel)]="data.Policy_Holders_Name">
+  </mat-form-field>
+  <mat-form-field appearance="legacy" class="Input-container">
+    <mat-label>Policy Amount</mat-label>
+    <input matInput [(ngModel)]="data.Policy_Amount">
+  </mat-form-field>
+  <mat-form-field appearance="legacy" class="Input-container">
+    <mat-label>Amout for EMI</mat-label>
+    <input matInput [(ngModel)]="data.Amout_for_EMI">
+  </mat-form-field>
+  <mat-form-field appearance="legacy" class="Input-container">
+    <mat-label>Nominees name</mat-label>
+    <input matInput [(ngModel)]="data.Nominees_name">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data" color="primary" cdkFocusInitial>{{data.title}}</button>
+  <!-- <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button> -->
+</div>

@@ -1,0 +1,28 @@
+{
+  "insurance": [
+    {
+      "Insurance_Policy_No": 105,
+      "Policy_Holders_Name": "Test56",
+      "Policy_Amount": 1000,
+      "Amout_for_EMI": 100,
+      "Nominees_name": "Raja",
+      "id": 5
+    },
+    {
+      "Insurance_Policy_No": "101",
+      "Policy_Holders_Name": "Manish Kumar",
+      "Policy_Amount": "25000",
+      "Amout_for_EMI": "210",
+      "Nominees_name": "Vijay Kumar",
+      "id": 8
+    },
+    {
+      "Insurance_Policy_No": "110",
+      "Policy_Holders_Name": "Test",
+      "Policy_Amount": "234",
+      "Amout_for_EMI": "7685",
+      "Nominees_name": "Raja",
+      "id": 11
+    }
+  ]
+}

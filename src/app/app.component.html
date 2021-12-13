@@ -1,0 +1,59 @@
+<!-- <mat-card> -->
+    <div  class="mat-typography" class="header">
+        <h1>Assignment Day 4</h1>
+    </div>
+    
+<div class="container-main">
+    <div class="demo-button-container">
+        <button mat-raised-button color ="primary" (click)="openDialog()" class="demo-buttons">
+        Add data
+        </button>
+        
+    </div>
+    <table mat-table [dataSource]="Insurance_data" class="mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+    
+        <!-- Position Column -->
+        <ng-container matColumnDef="Insurance Policy No">
+        <th mat-header-cell class="table-header" *matHeaderCellDef> Insurance Policy No </th>
+        <td mat-cell *matCellDef="let element"> {{element.Insurance_Policy_No}} </td>
+        </ng-container>
+    
+        <!-- Name Column -->
+        <ng-container matColumnDef="Policy Holders Name">
+        <th mat-header-cell class="table-header" *matHeaderCellDef> Policy Holders Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.Policy_Holders_Name}} </td>
+        </ng-container>
+    
+        <!-- Weight Column -->
+        <ng-container matColumnDef="Policy Amount">
+        <th mat-header-cell class="table-header" *matHeaderCellDef> Policy Amount </th>
+        <td mat-cell *matCellDef="let element"> {{element.Policy_Amount | currency : 'INR'}} </td>
+        </ng-container>
+    
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="Amout for EMI">
+        <th mat-header-cell class="table-header" *matHeaderCellDef> Amout for EMI </th>
+        <td mat-cell *matCellDef="let element"> {{element.Amout_for_EMI | currency : 'INR'}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="Nominees name">
+            <th mat-header-cell class="table-header" *matHeaderCellDef> Nominees name </th>
+            <td mat-cell *matCellDef="let element"> {{element.Nominees_name}} </td>
+        </ng-container>
+        
+        <ng-container matColumnDef="Button">
+            <th mat-header-cell class="table-header" *matHeaderCellDef> Actions </th>
+            <td mat-cell *matCellDef="let element"> 
+                <mat-icon color="primary" (click)= "EditDialog(element)">edit</mat-icon>
+                <mat-icon color="warn" (click)= "Delete_data(element.id)">delete</mat-icon>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row style="background-color:#172745;color: white;" *matHeaderRowDef="displayed_columns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayed_columns;"></tr>
+    </table>
+<!-- </mat-card> -->
+</div>
